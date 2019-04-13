@@ -18382,7 +18382,7 @@ Source: www.kingbright.com</description>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="VBUS" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="VBUS"/>
 <wire x1="-12.7" y1="83.82" x2="5.08" y2="83.82" width="0.1524" layer="91"/>
@@ -18624,6 +18624,11 @@ Source: www.kingbright.com</description>
 <pinref part="U$8" gate="G$1" pin="6"/>
 <wire x1="144.78" y1="-25.4" x2="139.7" y2="-25.4" width="0.1524" layer="91"/>
 <label x="134.62" y="-25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="124.46" y1="93.98" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
+<label x="124.46" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="B4" class="0">
