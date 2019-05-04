@@ -9,6 +9,20 @@
 <grid distance="50" unitdist="mil" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.000000123031" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -546,7 +560,7 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="SeeedStudio_2layer_DRU_no_angle_20140221">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -561,26 +575,28 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
+<description language="zh">&lt;b&gt;Seeed Studio EAGLE Design Rules&lt;/b&gt;
+</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 1.1mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
 <param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="6mil"/>
 <param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
-<param name="mdViaViaSameLayer" value="6mil"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdCopperDimension" value="10mil"/>
+<param name="mdDrill" value="10mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="0.35mm"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msDrill" value="12mil"/>
+<param name="msMicroVia" value="12mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -595,9 +611,9 @@ design rules under a new name.</description>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="6mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="6mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -605,16 +621,16 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="-1"/>
+<param name="psFirst" value="0"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="2mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="100mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -624,7 +640,7 @@ design rules under a new name.</description>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="1"/>
+<param name="checkRestrict" value="0"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
 <param name="checkNames" value="1"/>
@@ -863,7 +879,6 @@ design rules under a new name.</description>
 <vertex x="99.06" y="100.33"/>
 </polygon>
 <wire x1="67.31" y1="49.53" x2="60.96" y2="49.53" width="0.1524" layer="16"/>
-<wire x1="60.96" y1="49.53" x2="59.69" y2="50.8" width="0.1524" layer="16"/>
 <wire x1="52.07" y1="67.31" x2="52.07" y2="63.5" width="0.1524" layer="16"/>
 <wire x1="52.07" y1="63.5" x2="50.8" y2="62.23" width="0.1524" layer="16"/>
 <via x="50.8" y="62.23" extent="1-16" drill="0.35"/>
@@ -1056,16 +1071,19 @@ design rules under a new name.</description>
 <wire x1="58.42" y1="57.15" x2="64.77" y2="57.15" width="0.1524" layer="16"/>
 <via x="64.77" y="57.15" extent="1-16" drill="0.35"/>
 <wire x1="64.77" y1="57.15" x2="64.77" y2="54.61" width="0.1524" layer="1"/>
-<wire x1="64.77" y1="54.61" x2="58.42" y2="54.61" width="0.1524" layer="1"/>
-<wire x1="57.87" y1="54.47" x2="58.42" y2="54.61" width="0" layer="19" extent="1-1"/>
+<wire x1="64.77" y1="54.61" x2="64.77" y2="54.455190625" width="0.1524" layer="1"/>
+<wire x1="64.77" y1="54.61" x2="64.63" y2="54.47" width="0.1524" layer="1"/>
+<wire x1="64.63" y1="54.47" x2="57.87" y2="54.47" width="0.1524" layer="1"/>
 </signal>
 <signal name="B15">
 <contactref element="U$1" pad="15"/>
 <contactref element="U$9" pad="1"/>
 <wire x1="60.96" y1="2.54" x2="60.96" y2="49.53" width="0.1524" layer="1"/>
-<wire x1="60.96" y1="49.53" x2="60.06244375" y2="50.42755625" width="0.1524" layer="1"/>
-<wire x1="60.06244375" y1="50.42755625" x2="57.791475" y2="50.42755625" width="0.1524" layer="1"/>
-<wire x1="57.791475" y1="50.42755625" x2="57.87" y2="50.47" width="0" layer="19" extent="1-1"/>
+<wire x1="60.96" y1="49.53" x2="59.69" y2="50.8" width="0.1524" layer="1"/>
+<wire x1="59.69" y1="50.8" x2="58.7232875" y2="50.8" width="0.1524" layer="1"/>
+<wire x1="58.7232875" y1="50.8" x2="58.7146875" y2="50.7914" width="0.1524" layer="1"/>
+<wire x1="58.7146875" y1="50.7914" x2="58.1914" y2="50.7914" width="0.1524" layer="1"/>
+<wire x1="58.1914" y1="50.7914" x2="57.87" y2="50.47" width="0.1524" layer="1"/>
 </signal>
 <signal name="B14">
 <contactref element="U$1" pad="14"/>
@@ -1088,11 +1106,10 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="44"/>
 <contactref element="U$9" pad="5"/>
 <wire x1="50.8" y1="2.54" x2="41.401409375" y2="11.938590625" width="0.1524" layer="1"/>
-<wire x1="41.401409375" y1="11.938590625" x2="41.401409375" y2="47.20106875" width="0.1524" layer="1"/>
+<wire x1="41.401409375" y1="11.938590625" x2="41.401409375" y2="48.06711875" width="0.1524" layer="1"/>
 <wire x1="46.249265625" y1="48.090734375" x2="46.27" y2="48.07" width="0.1524" layer="1"/>
-<wire x1="41.401409375" y1="47.20106875" x2="42.28901875" y2="48.088678125" width="0.1524" layer="1"/>
-<wire x1="46.27" y1="48.07" x2="46.251321875" y2="48.088678125" width="0.1524" layer="1"/>
-<wire x1="46.251321875" y1="48.088678125" x2="42.28901875" y2="48.088678125" width="0.1524" layer="1"/>
+<wire x1="46.27" y1="48.07" x2="46.26711875" y2="48.06711875" width="0.1524" layer="1"/>
+<wire x1="46.26711875" y1="48.06711875" x2="41.401409375" y2="48.06711875" width="0.1524" layer="1"/>
 </signal>
 <signal name="A4">
 <contactref element="U$1" pad="34"/>
@@ -1238,6 +1255,16 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="5,16,93597d6eec8fdd6e"/>
+<approved hash="5,16,04ce185957b09c51"/>
+<approved hash="5,16,8359655ef41fdd6e"/>
+<approved hash="5,16,048e00094fa09c71"/>
+<approved hash="5,1,93597d6eec8fdd6e"/>
+<approved hash="5,1,04ce185957b09c51"/>
+<approved hash="5,1,8359655ef41fdd6e"/>
+<approved hash="5,1,048e00094fa09c71"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
